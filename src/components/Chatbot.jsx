@@ -29,8 +29,16 @@ export default function Chatbot() {
       {step === "wordsearch" && (
         <div>
           <h3>Enter words (comma-separated):</h3>
-          <input type="text" value={words} onChange={(e) => setWords(e.target.value)} />
-          <button onClick={() => handleOrder("https://payhip.com/your-wordsearch-product")}>
+          <input
+            type="text"
+            value={words}
+            onChange={(e) => setWords(e.target.value)}
+          />
+          <button
+            onClick={() =>
+              handleOrder("https://payhip.com/YOUR-WORDSEARCH-LINK")
+            }
+          >
             Generate Word Search
           </button>
         </div>
@@ -39,8 +47,16 @@ export default function Chatbot() {
       {step === "crossword" && (
         <div>
           <h3>Enter words (comma-separated):</h3>
-          <input type="text" value={words} onChange={(e) => setWords(e.target.value)} />
-          <button onClick={() => handleOrder("https://payhip.com/your-crossword-product")}>
+          <input
+            type="text"
+            value={words}
+            onChange={(e) => setWords(e.target.value)}
+          />
+          <button
+            onClick={() =>
+              handleOrder("https://payhip.com/YOUR-CROSSWORD-LINK")
+            }
+          >
             Generate Crossword
           </button>
         </div>
@@ -49,10 +65,25 @@ export default function Chatbot() {
       {step === "coloring" && (
         <div>
           <h3>Choose a theme:</h3>
-          <button onClick={() => handleOrder("https://payhip.com/your-single-page-product")}>
+          <button
+            onClick={() =>
+              handleOrder("https://payhip.com/b/lytZC") // 🔹 Replace with YOUR actual Free Sample link
+            }
+          >
+            🎁 Download Free Sample
+          </button>
+          <button
+            onClick={() =>
+              handleOrder("https://payhip.com/YOUR-SINGLE-PAGE-LINK")
+            }
+          >
             Order This Page ($0.05)
           </button>
-          <button onClick={() => handleOrder("https://payhip.com/your-bundle-product")}>
+          <button
+            onClick={() =>
+              handleOrder("https://payhip.com/YOUR-BUNDLE-LINK")
+            }
+          >
             Buy Full Bundle ($7.99)
           </button>
         </div>
