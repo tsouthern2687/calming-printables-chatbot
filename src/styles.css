@@ -1,0 +1,51 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* Center container */
+.chatbot {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Headings */
+.chatbot h2,
+.chatbot h3 {
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.chatbot button {
+  margin: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.chatbot button:hover {
+  background: #45a049;
+}
+
+/* Input field */
+.chatbot input[type="text"] {
+  padding: 0.6rem;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
